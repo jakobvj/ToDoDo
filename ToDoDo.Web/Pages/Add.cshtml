@@ -1,0 +1,12 @@
+﻿@page
+@model ToDoDo.Web.Pages.AddModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+<form asp-page="Add" method="post" class="form-inline">
+    
+    <input type="text" id="ToDoText" name="ToDoText" class="form-control" placeholder="Description" />
+    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-save"></span> Add ToDo</button>
+</form>
